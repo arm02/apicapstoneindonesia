@@ -14,8 +14,7 @@ class Pelayanan extends Model
     {
         $rules = [
             'judul'    => 'required',
-            'keterangan'         => 'required',
-            'gambar'         => 'required'
+            'keterangan'         => 'required'
         ];
 
         if ($update) {

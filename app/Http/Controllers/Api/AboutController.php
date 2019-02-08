@@ -17,7 +17,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return new AboutCollection(About2::where('id', 1)->get());
+        return new AboutCollection(About::where('id', 1)->get());
 
     }
 
@@ -61,7 +61,7 @@ class AboutController extends Controller
      */
     public function show(About $about)
     {
-        return new AboutItem($about2);
+        return new AboutItem($about);
     }
 
     /**

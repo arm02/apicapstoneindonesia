@@ -16,8 +16,7 @@ class PelayananItem extends JsonResource
     {
         return [
             'judul' => $this->judul,
-            'keterangan' => $this->keterangan,
-            'gambar' => $this->gambar
+            'keterangan' => $this->keterangan
         ];
     }
 }

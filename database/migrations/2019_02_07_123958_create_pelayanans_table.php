@@ -17,7 +17,6 @@ class CreatePelayanansTable extends Migration
             $table->increments('id');
             $table->string('judul');
             $table->text('keterangan');
-            $table->string('gambar');
             $table->timestamps();
         });
     }

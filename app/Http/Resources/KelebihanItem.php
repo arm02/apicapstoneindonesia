@@ -15,6 +15,7 @@ class KelebihanItem extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'judul' => $this->judul,
             'keterangan' => $this->keterangan,
             'gambar' => $this->gambar
