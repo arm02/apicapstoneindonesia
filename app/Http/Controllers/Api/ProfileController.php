@@ -17,7 +17,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return new ProfileCollection(Profile::get());
+        return new ProfileCollection(Profile::where('id', 1)->get());
     }
 
     /**

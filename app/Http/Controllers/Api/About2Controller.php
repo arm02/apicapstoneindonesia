@@ -17,7 +17,7 @@ class About2Controller extends Controller
      */
     public function index()
     {
-        return new About2Collection(About2::get());
+        return new About2Collection(About2::where('id', 1)->get());
     }
 
     /**
