@@ -38,17 +38,27 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, Client::rules(false));
-        if (!Client::create($request->all())) {
+        // $this->validate($request, Client::rules(false));
+        // if (!Client::create($request->all())) {
+        //     return [
+        //         'message' => 'Bad Request',
+        //         'code' => 400,
+        //     ];
+        // } else {
+        //     return [
+        //         'message' => 'OK',
+        //         'code' => 200,
+        //     ];
+        // }
+
+        if(!Client::create($request->all())){
             return [
                 'message' => 'Bad Request',
-                'code' => 400,
-            ];
-        } else {
+                'code' => 400,];
+        }else {
             return [
                 'message' => 'OK',
-                'code' => 200,
-            ];
+                'code' => 200,];
         }
     }
 

@@ -17,7 +17,7 @@ class KelebihanController extends Controller
      */
     public function index()
     {
-        //
+        return new KelebihanCollection(Kelebihan::get());
     }
 
     /**
